@@ -1,0 +1,3 @@
+Name: Suma
+Course: BCA
+About GitHub: Learn about file and folder structures for web apps, APIs, mobile apps, machine learning projects, etc.
