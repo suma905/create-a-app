@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zipgo Logo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the logo elements */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .logo-container {
+            /* Using a fixed size for demonstration, but can be made responsive */
+            width: 200px;
+            height: 200px;
+        }
+        .z-element {
+            /* Common style for the white bars of the 'Z' */
+            position: absolute;
+            background-color: white;
+            border-radius: 9999px; /* Fully rounded ends */
+        }
+        .z-top {
+            width: 45%;
+            height: 12%;
+            top: 20%;
+            left: 20%;
+        }
+        .z-middle {
+            width: 12%;
+            height: 65%;
+            top: 17.5%;
+            left: 44%;
+            transform: rotate(125deg);
+            transform-origin: center;
+        }
+        .z-bottom {
+            width: 45%;
+            height: 12%;
+            bottom: 20%;
+            right: 20%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Logo Container -->
+    <div class="logo-container relative flex items-center justify-center">
+        <!-- Orange circular background, mimicking a map pin -->
+        <div class="w-full h-full bg-orange-500 rounded-full shadow-2xl"></div>
+
+        <!-- The 'Z' shape container, positioned absolutely within the circle -->
+        <div class="absolute w-full h-full">
+            <!-- Top bar of the 'Z' -->
+            <div class="z-element z-top"></div>
+            <!-- Diagonal bar of the 'Z' -->
+            <div class="z-element z-middle"></div>
+            <!-- Bottom bar of the 'Z' -->
+            <div class="z-element z-bottom"></div>
+        </div>
+    </div>
+
+</body>
+</html>
